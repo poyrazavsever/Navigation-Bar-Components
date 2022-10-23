@@ -1,7 +1,26 @@
+import './index.css';
+import {Routes, Route, NavLink} from "react-router-dom"
+import NavbarOne from './Navbar1';
+import classNames from 'classnames';
+
 function App() {
   return (
     <div>
-      Navigation Bar
+
+      <Routes>
+        <Route path="/navigation1" element={<NavbarOne />} />
+      </Routes>
+
+      <div>
+
+        <NavLink to="/navigation1"  className={({ isActive }) =>
+        classNames({
+          "text-xl font-medium flex justify-center items-center w-full h-screen" : true,
+          "text-indigo-700" : isActive 
+        
+        })}>1- Navbar</NavLink>
+
+      </div>
     </div>
   );
 }
