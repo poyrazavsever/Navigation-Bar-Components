@@ -15,7 +15,7 @@ function App() {
 
         <NavLink to="/navigation1"  className={({ isActive }) =>
         classNames({
-          "text-xl font-medium flex justify-center items-center w-full h-screen" : true,
+          "text-xl font-medium" : true,
           "text-indigo-700" : isActive 
         
         })}>1- Navbar</NavLink>
