@@ -1,6 +1,6 @@
 import React from 'react'
 import { useState } from 'react'
-import { Services, Link, Gallery, Arrow } from '../../icons'
+import { Services, LinkIcon, Gallery, Arrow } from '../../icons'
 import classNames from 'classnames';
 import DropDownMenu from './dropdownmenu';
 
@@ -26,7 +26,7 @@ function NavbarPart() {
                 </a>
 
                 <a href="/" className={linkStyle}>
-                    <Link className={iconStyle} />
+                    <LinkIcon className={iconStyle} />
                     <h4 className={textStyle}>My Links</h4>
                 </a>
 
@@ -34,7 +34,7 @@ function NavbarPart() {
                     <div onClick={menuIcon} className={linkStyle}>
 
                         <Gallery className={iconStyle} />
-                        <h4 className={textStyle}>Our Gallery</h4>
+                        <h4 className={textStyle}>Nav Bars</h4>
 
                         <Arrow className={classNames({
                             "text-lg -rotate-90 transition-all duration-200  text-zinc-300": true,

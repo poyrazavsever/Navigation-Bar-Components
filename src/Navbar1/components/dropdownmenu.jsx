@@ -14,32 +14,32 @@ function DropDownMenu({isClick}) {
             "pointer-events-auto opacity-100 translate-x-0" : isClick
         })}>
 
-            <div className={dropDownStyle}>
+            <a href="/" className={dropDownStyle}>
 
                 <div
                     className={`${bollStyle} bg-red-500 shadow-red-700`}>
                 </div>
-                <h6 className={ddTextStyle}>First Gallery</h6>
+                <h6 className={ddTextStyle}>First Navbar</h6>
 
-            </div>
+            </a>
 
-            <div className={dropDownStyle}>
+            <a href="/navigationbar2" className={dropDownStyle}>
 
                 <div
                     className={`${bollStyle} bg-green-500 shadow-green-700`}>
                 </div>
-                <h6 className={ddTextStyle}>Secondary Gallery</h6>
+                <h6 className={ddTextStyle}>Secondary Navbar</h6>
 
-            </div>
+            </a>
 
-            <div className={dropDownStyle}>
+            <a href="/navigationbar3" className={dropDownStyle}>
 
                 <div
                     className={`${bollStyle} bg-blue-500 shadow-blue-700`}>
                 </div>
-                <h6 className={ddTextStyle}>Thert Gallery</h6>
+                <h6 className={ddTextStyle}>Third Navbar</h6>
 
-            </div>
+            </a>
 
         </div>
     )
